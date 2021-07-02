@@ -13,7 +13,7 @@ func main() {
 			"message": "nice！",
 		})
 	})
-	r.POST("/post", func(c *gin.Context) {
+	r.POST("/post", func(c *gin.Context) { //post在浏览器无法正常获取，因为浏览器默认get请求
 		message := c.PostForm("message")
 		nick := c.DefaultPostForm("nick", "anonymous") // 此方法可以设置默认值
 
