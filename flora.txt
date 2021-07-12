@@ -1,0 +1,21 @@
+>登录GitLab，完成双重认证和SSH密钥设定。
+>在Home下完成20200803/gdc的flora和florabase的环境搭建，（链接可能失效，换克隆链接）
+对比README_WIN和README文件，完成windows的flora环境配置
+PS C:\Users\29043\a2\src\eng\flora> flora执行成功即可	
+
+运行a2\src\eng\flora-base\projects\fumidash-demo-local\go.mod 
+（
+replace ma.applysquare.net/eng/flora => ../../../flora 未注释代表运行本地flora
+）
+
+
+*MR规范学习
+>*timesheet填写
+
+cd ~/a2/src/eng/flora/cmd/flora
+go install ./...    （如果报错：无效访问，需要建立个人令牌（参考：https://blog.csdn.net/qq_38534524/article/details/109329575）把个人令牌作为密码输入） 
+
+
+
+
+
