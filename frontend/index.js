@@ -8,10 +8,10 @@ class App extends Component{
 // 初始化状态
 state = {
   comments:[
-    // {id:1, name: 'jace', content:'hhhhhhh'},
-    // {id:2, name: 'jack', content:'hhhehehhe'},
-    // {id:3, name: 'qurk', content:'hh6666'},
-    // {id:4, name: 'ppotr', content:'888888'}
+    {id:1, name: 'jace', content:'hhhhhhh'},
+    {id:2, name: 'jack', content:'hhhehehhe'},
+    {id:3, name: 'qurk', content:'hh6666'},
+    {id:4, name: 'ppotr', content:'888888'}
   ],
   userName : '',
   userContent :''
@@ -72,6 +72,7 @@ addComment = ()=>{
   //console.log(newComments)
   this.setState({
     comments:newComments,
+    //清空输入框
     userName : '',
     userContent :''
   })
